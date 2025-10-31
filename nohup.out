@@ -1,0 +1,1349 @@
+[2025-06-12 09:59:52,095] torch.distributed.run: [WARNING] 
+[2025-06-12 09:59:52,095] torch.distributed.run: [WARNING] *****************************************
+[2025-06-12 09:59:52,095] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2025-06-12 09:59:52,095] torch.distributed.run: [WARNING] *****************************************
+/home/admin/anaconda3/envs/yiliny/bin/python: can't open file '/home/admin/lxk/2025612/danka/ ': [Errno 2] No such file or directory
+/home/admin/anaconda3/envs/yiliny/bin/python: can't open file '/home/admin/lxk/2025612/danka/ ': [Errno 2] No such file or directory
+/home/admin/anaconda3/envs/yiliny/bin/python: can't open file '/home/admin/lxk/2025612/danka/ ': [Errno 2] No such file or directory
+[2025-06-12 09:59:57,149] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 2) local_rank: 0 (pid: 1587143) of binary: /home/admin/anaconda3/envs/yiliny/bin/python
+Traceback (most recent call last):
+  File "/home/admin/anaconda3/envs/yiliny/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/admin/anaconda3/envs/yiliny/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/admin/anaconda3/envs/yiliny/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/admin/anaconda3/envs/yiliny/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/admin/anaconda3/envs/yiliny/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/admin/anaconda3/envs/yiliny/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+  FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-12_09:59:57
+  host      : DGXA100d
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 1587144)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-12_09:59:57
+  host      : DGXA100d
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 1587145)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-12_09:59:57
+  host      : DGXA100d
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 1587143)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[2025-06-22 10:07:26,092] torch.distributed.run: [WARNING] 
+[2025-06-22 10:07:26,092] torch.distributed.run: [WARNING] *****************************************
+[2025-06-22 10:07:26,092] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2025-06-22 10:07:26,092] torch.distributed.run: [WARNING] *****************************************
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+[2025-06-22 10:07:36,161] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 2) local_rank: 0 (pid: 2095565) of binary: /home/admin/anaconda3/envs/xinkangli/bin/python
+Traceback (most recent call last):
+  File "/home/admin/anaconda3/envs/xinkangli/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pretraining_gimlet.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-22_10:07:36
+  host      : DGXA100d
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2095566)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-22_10:07:36
+  host      : DGXA100d
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2095567)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-22_10:07:36
+  host      : DGXA100d
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2095565)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[2025-06-22 11:19:39,447] torch.distributed.run: [WARNING] 
+[2025-06-22 11:19:39,447] torch.distributed.run: [WARNING] *****************************************
+[2025-06-22 11:19:39,447] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2025-06-22 11:19:39,447] torch.distributed.run: [WARNING] *****************************************
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+usage: pretraining_gimlet.py [-h] [--num_classes NUM_CLASSES]
+                             [--max_nodes MAX_NODES] [--num_atoms NUM_ATOMS]
+                             [--num_edges NUM_EDGES]
+                             [--num_in_degree NUM_IN_DEGREE]
+                             [--num_out_degree NUM_OUT_DEGREE]
+                             [--num_spatial NUM_SPATIAL]
+                             [--num_edge_dis NUM_EDGE_DIS]
+                             [--multi_hop_max_dist MULTI_HOP_MAX_DIST]
+                             [--spatial_pos_max SPATIAL_POS_MAX]
+                             [--edge_type EDGE_TYPE] [--dropout DROPOUT]
+                             [--encoder_embed_dim ENCODER_EMBED_DIM]
+                             [--encoder_attention_heads ENCODER_ATTENTION_HEADS]
+                             [--encoder_layers ENCODER_LAYERS]
+                             [--encoder_normalize_before [ENCODER_NORMALIZE_BEFORE]]
+                             [--apply_graphormer_init [APPLY_GRAPHORMER_INIT]]
+                             [--no_apply_graphormer_init]
+                             [--graphonly_problem_type GRAPHONLY_PROBLEM_TYPE]
+                             [--graphonly_readout GRAPHONLY_READOUT]
+                             [--maskt2g [MASKT2G]] [--no_maskt2g]
+                             [--loss_reduction_method LOSS_REDUCTION_METHOD]
+pretraining_gimlet.py: error: unrecognized arguments:  
+[2025-06-22 11:19:49,512] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 2) local_rank: 0 (pid: 2098271) of binary: /home/admin/anaconda3/envs/xinkangli/bin/python
+Traceback (most recent call last):
+  File "/home/admin/anaconda3/envs/xinkangli/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pretraining_gimlet.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-22_11:19:49
+  host      : DGXA100d
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2098272)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-22_11:19:49
+  host      : DGXA100d
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2098273)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-22_11:19:49
+  host      : DGXA100d
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2098271)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[2025-07-02 02:54:00,103] torch.distributed.run: [WARNING] 
+[2025-07-02 02:54:00,103] torch.distributed.run: [WARNING] *****************************************
+[2025-07-02 02:54:00,103] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2025-07-02 02:54:00,103] torch.distributed.run: [WARNING] *****************************************
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+[W CUDAAllocatorConfig.h:30] Warning: expandable_segments not supported on this platform (function operator())
+07/02/2025 02:54:06 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+07/02/2025 02:54:06 - WARNING - __main__ - Process rank: 2, device: cuda:2, n_gpu: 1distributed training: True, 16-bits training: False
+07/02/2025 02:54:06 - WARNING - __main__ - Process rank: 1, device: cuda:1, n_gpu: 1distributed training: True, 16-bits training: False
+打印前几个训练样本：
+第1个样本：
+{'graph': 'CN1C2CCCC1CC(NC(=O)c1nn(C)c3ccccc13)C2', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL289469', 'split': 'train'}
+第2个样本：
+{'graph': 'CNC1CCC(c2ccc(Cl)c(Cl)c2)c2ccccc21', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL809', 'split': 'train'}
+第3个样本：
+{'graph': '[H]C12CCC3=CC(=O)CCC3=C1C(c1ccc(N(C)C)cc1)CC1(C)C(O)(C#CC)CCC21[H]', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL1276308', 'split': 'train'}
+第4个样本：
+{'graph': 'Oc1c(Cl)cc(Cl)cc1Sc1cc(Cl)cc(Cl)c1O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL290106', 'split': 'train'}
+第5个样本：
+{'graph': 'O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL923', 'split': 'train'}
+加载完整训练集样本
+原始训练集样本数: 23874346
+Filtering invalid SMILES from training data...
+打印前几个训练样本：
+第1个样本：
+{'graph': 'CN1C2CCCC1CC(NC(=O)c1nn(C)c3ccccc13)C2', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL289469', 'split': 'train'}
+第2个样本：
+{'graph': 'CNC1CCC(c2ccc(Cl)c(Cl)c2)c2ccccc21', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL809', 'split': 'train'}
+第3个样本：
+{'graph': '[H]C12CCC3=CC(=O)CCC3=C1C(c1ccc(N(C)C)cc1)CC1(C)C(O)(C#CC)CCC21[H]', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL1276308', 'split': 'train'}
+第4个样本：
+{'graph': 'Oc1c(Cl)cc(Cl)cc1Sc1cc(Cl)cc(Cl)c1O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL290106', 'split': 'train'}
+第5个样本：
+{'graph': 'O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL923', 'split': 'train'}
+加载完整训练集样本
+原始训练集样本数: 23874346
+Filtering invalid SMILES from training data...
+打印前几个训练样本：
+第1个样本：
+{'graph': 'CN1C2CCCC1CC(NC(=O)c1nn(C)c3ccccc13)C2', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL289469', 'split': 'train'}
+第2个样本：
+{'graph': 'CNC1CCC(c2ccc(Cl)c(Cl)c2)c2ccccc21', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL809', 'split': 'train'}
+第3个样本：
+{'graph': '[H]C12CCC3=CC(=O)CCC3=C1C(c1ccc(N(C)C)cc1)CC1(C)C(O)(C#CC)CCC21[H]', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL1276308', 'split': 'train'}
+第4个样本：
+{'graph': 'Oc1c(Cl)cc(Cl)cc1Sc1cc(Cl)cc(Cl)c1O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'Yes', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL290106', 'split': 'train'}
+第5个样本：
+{'graph': 'O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O', 'text': ['The assay is DRUGMATRIX: Adrenergic Alpha-2C radioligand binding (ligand: [3H] MK-912) , and it is Homologous single protein target assigned . The assay has properties: assay cell type is Sf9 ; assay subcellular fraction is Membrane ; assay test type is In vitro ; assay type description is Binding . Is the molecule effective to this assay?'], 'label': 'No', 'dataset_name': 'chembl_pretraining', 'task_index': 'CHEMBL1909090', 'molecule_index': 'CHEMBL923', 'split': 'train'}
+加载完整训练集样本
+原始训练集样本数: 23874346
+Filtering invalid SMILES from training data...
+过滤结果：保留 23872466 条，有效率 99.99%，过滤掉 1880 条无效 SMILES。
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/huggingface_hub/file_download.py:896: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+过滤结果：保留 23872466 条，有效率 99.99%，过滤掉 1880 条无效 SMILES。
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/huggingface_hub/file_download.py:896: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+过滤结果：保留 23872466 条，有效率 99.99%，过滤掉 1880 条无效 SMILES。
+/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/huggingface_hub/file_download.py:896: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[DEBUG] contrastive_alpha used in model: 0.1
+[DEBUG] contrastive_alpha used in model: 0.1
+[DEBUG] contrastive_alpha used in model: 0.1
+[WARNING|modeling_utils.py:3192] 2025-07-02 02:54:18,322 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized: ['encoder.graph_encoder.graph_attn_bias.edge_dis_encoder.weight', 'encoder.fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_attn_bias.graph_token_virtual_distance.weight', 'fingerprint_projector.2.weight', 'encoder.graph_encoder.graph_node_feature.atom_encoder.weight', 'encoder.graph_encoder.graph_node_feature.out_degree_encoder.weight', 'fingerprint_projector.0.weight', 'fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_attn_bias.spatial_pos_encoder.weight', 'fingerprint_projector.2.bias', 'encoder.graph_encoder.graph_node_feature.graph_token.weight', 'encoder.fingerprint_projector.2.weight', 'encoder.graph_encoder.graph_node_feature.in_degree_encoder.weight', 'encoder.fingerprint_projector.0.weight', 'encoder.graph_encoder.graph_attn_bias.edge_encoder.weight', 'encoder.position_embedding_graph.weight', 'encoder.fingerprint_projector.2.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[WARNING|modeling_utils.py:3211] 2025-07-02 02:54:18,322 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized because the shapes did not match:
+- shared.weight: found shape torch.Size([32128, 512]) in the checkpoint and torch.Size([32100, 512]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[WARNING|modeling_utils.py:3192] 2025-07-02 02:54:18,329 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized: ['fingerprint_projector.0.weight', 'encoder.graph_encoder.graph_attn_bias.edge_dis_encoder.weight', 'fingerprint_projector.2.bias', 'encoder.fingerprint_projector.2.bias', 'encoder.fingerprint_projector.2.weight', 'encoder.graph_encoder.graph_attn_bias.edge_encoder.weight', 'encoder.graph_encoder.graph_attn_bias.graph_token_virtual_distance.weight', 'fingerprint_projector.2.weight', 'encoder.fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_attn_bias.spatial_pos_encoder.weight', 'encoder.fingerprint_projector.0.weight', 'encoder.position_embedding_graph.weight', 'encoder.graph_encoder.graph_node_feature.out_degree_encoder.weight', 'encoder.graph_encoder.graph_node_feature.atom_encoder.weight', 'encoder.graph_encoder.graph_node_feature.in_degree_encoder.weight', 'fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_node_feature.graph_token.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[WARNING|modeling_utils.py:3211] 2025-07-02 02:54:18,329 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized because the shapes did not match:
+- shared.weight: found shape torch.Size([32128, 512]) in the checkpoint and torch.Size([32100, 512]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[WARNING|modeling_utils.py:3192] 2025-07-02 02:54:18,408 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized: ['encoder.graph_encoder.graph_node_feature.in_degree_encoder.weight', 'fingerprint_projector.0.weight', 'encoder.fingerprint_projector.0.weight', 'encoder.fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_attn_bias.graph_token_virtual_distance.weight', 'fingerprint_projector.2.bias', 'encoder.fingerprint_projector.2.weight', 'encoder.graph_encoder.graph_node_feature.graph_token.weight', 'encoder.position_embedding_graph.weight', 'fingerprint_projector.0.bias', 'encoder.graph_encoder.graph_attn_bias.edge_encoder.weight', 'encoder.graph_encoder.graph_node_feature.out_degree_encoder.weight', 'encoder.graph_encoder.graph_attn_bias.spatial_pos_encoder.weight', 'encoder.graph_encoder.graph_node_feature.atom_encoder.weight', 'fingerprint_projector.2.weight', 'encoder.graph_encoder.graph_attn_bias.edge_dis_encoder.weight', 'encoder.fingerprint_projector.2.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[WARNING|modeling_utils.py:3211] 2025-07-02 02:54:18,409 >> Some weights of GraphT5TransformerForConditionalGeneration were not initialized from the model checkpoint at t5-small and are newly initialized because the shapes did not match:
+- shared.weight: found shape torch.Size([32128, 512]) in the checkpoint and torch.Size([32100, 512]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+last_checkpoint: None
+/home/admin/lxk/GIMLET/transformers/src/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+last_checkpoint: None
+/home/admin/lxk/GIMLET/transformers/src/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+last_checkpoint: None
+/home/admin/lxk/GIMLET/transformers/src/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/1492032 [00:00<?, ?it/s]/home/admin/lxk/2025612/dankapingjia1/model/GIMLET/data_utils.py:18: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  return torch.tensor(fps)
+/home/admin/lxk/2025612/dankapingjia1/model/GIMLET/data_utils.py:18: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  return torch.tensor(fps)
+/home/admin/lxk/2025612/dankapingjia1/model/GIMLET/data_utils.py:18: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  return torch.tensor(fps)
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: cl_detail: {'loss_text_graph': tensor(2.7281, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7668, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7860, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.629267692565918
+{'loss_text_graph': tensor(2.6977, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7516, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7612, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.654106140136719
+fp_repr is None: False
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7026, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7473, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7455, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.620689392089844
+fp_repr is None: False
+  0%|          | 1/1492032 [00:02<1201:04:51,  2.90s/it]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7186, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7860, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7911, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.61264419555664
+fp_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6821, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.8056, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7763, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.659063339233398
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6931, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7788, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7646, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.540594100952148
+fp_repr is None: False
+  0%|          | 2/1492032 [00:03<591:33:35,  1.43s/it] fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7037, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7668, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7786, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.958770751953125
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7153, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7941, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7699, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.514161109924316
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7264, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7815, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7773, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.605645179748535
+fp_repr is None: False
+  0%|          | 3/1492032 [00:03<387:02:47,  1.07it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+cl_detail:fp_repr is None:  False
+cl_detail: {'loss_text_graph': tensor(2.7442, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7707, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7560, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.598999977111816
+fp_repr is None: False
+{'loss_text_graph': tensor(2.6957, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7651, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7792, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.52215576171875
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7120, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7843, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7897, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.207213401794434
+fp_repr is None: False
+  0%|          | 4/1492032 [00:04<300:22:57,  1.38it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: === Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7030, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7715, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7787, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.434368133544922
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7350, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7612, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7679, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.346147537231445
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6691, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7757, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7829, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.427125930786133
+fp_repr is None: False
+  0%|          | 5/1492032 [00:04<244:14:47,  1.70it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7291, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7681, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7649, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.399662971496582
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7262, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7747, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7778, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.371636390686035
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7217, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7633, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7847, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.526459693908691
+fp_repr is None: False
+  0%|          | 6/1492032 [00:04<206:18:00,  2.01it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7398, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7665, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7952, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.421806335449219
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6724, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7572, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.8117, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.280208587646484
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7082, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7504, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.8016, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.329045295715332
+fp_repr is None: False
+  0%|          | 7/1492032 [00:05<187:47:31,  2.21it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6399, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7830, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7600, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.308547973632812
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7206, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7647, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7865, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.305142402648926
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7131, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7645, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7815, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.215606689453125
+fp_repr is None: False
+  0%|          | 8/1492032 [00:05<173:13:39,  2.39it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7275, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7906, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.8174, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.253885269165039
+fingerprint_repr is None: False
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6947, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7654, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7662, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.33724308013916
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6718, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7710, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7623, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.275947570800781
+fp_repr is None: False
+  0%|          | 9/1492032 [00:05<173:52:57,  2.38it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7089, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7655, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7753, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.381660461425781
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7310, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7673, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7730, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.221391677856445
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7036, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7627, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7557, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.226113319396973
+fp_repr is None: False
+  0%|          | 10/1492032 [00:06<156:41:29,  2.65it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6777, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7585, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7708, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.27385425567627
+fp_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6901, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7517, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7637, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.133378982543945
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6910, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7647, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7424, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.208003044128418
+fp_repr is None: False
+  0%|          | 11/1492032 [00:06<149:00:06,  2.78it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6649, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7607, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7548, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.20887565612793
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6943, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7550, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7930, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.211544036865234
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7101, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7813, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7690, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.301826477050781
+fp_repr is None: False
+  0%|          | 12/1492032 [00:06<152:34:02,  2.72it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6787, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7573, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7516, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.15772533416748
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7402, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7657, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7763, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.14699935913086
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6966, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7463, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.8012, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.21296215057373
+fp_repr is None: False
+  0%|          | 13/1492032 [00:07<157:07:29,  2.64it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7618, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7684, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7763, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.057838439941406
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6781, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7713, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7877, device='cuda:0', grad_fn=<NllLossBackward0>)}
+fingerprint_repr is None: False
+total_loss: 11.117420196533203
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6984, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7624, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7427, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.106461524963379
+fp_repr is None: False
+  0%|          | 14/1492032 [00:07<156:11:00,  2.65it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6986, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7825, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.8044, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.121973037719727
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7192, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7569, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7319, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.022126197814941
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6463, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7434, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7196, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.105276107788086
+fp_repr is None: False
+  0%|          | 15/1492032 [00:07<157:23:33,  2.63it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6955, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7622, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7774, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.120016098022461
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6610, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7519, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7293, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.00418758392334
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6964, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7489, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7572, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.993209838867188
+fp_repr is None: False
+  0%|          | 16/1492032 [00:08<149:51:01,  2.77it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7690, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7688, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7711, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.980877876281738
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7785, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7432, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7408, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.012405395507812
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7414, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7963, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7307, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.990528106689453
+fp_repr is None: False
+  0%|          | 17/1492032 [00:08<149:30:37,  2.77it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6941, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7582, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7492, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.041581153869629
+fp_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: === Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6086, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7704, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7579, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.073659896850586
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7789, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7586, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7441, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.070923805236816
+fp_repr is None: False
+  0%|          | 18/1492032 [00:09<157:11:40,  2.64it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6326, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7624, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7705, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.945942878723145
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7208, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7559, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7472, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.918647766113281
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7265, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7549, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7862, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.970808982849121
+fp_repr is None: False
+  0%|          | 19/1492032 [00:09<159:31:02,  2.60it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6457, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7509, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7623, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.927766799926758
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6493, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7664, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7424, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.996649742126465
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6465, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7471, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7740, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.037822723388672
+fp_repr is None: False
+  0%|          | 20/1492032 [00:09<163:23:29,  2.54it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: cl_detail: {'loss_text_graph': tensor(2.6279, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7103, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7709, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 11.070950508117676
+fp_repr is None:{'loss_text_graph': tensor(2.6429, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7185, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7255, device='cuda:0', grad_fn=<NllLossBackward0>)} 
+False
+total_loss: 10.968957901000977
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7162, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7493, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7999, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 11.045011520385742
+fp_repr is None: False
+  0%|          | 21/1492032 [00:10<150:01:45,  2.76it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6838, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7799, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7484, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.921660423278809
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5813, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7563, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7900, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.983037948608398
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5473, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7471, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7412, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 11.03258228302002
+fp_repr is None: False
+  0%|          | 22/1492032 [00:10<141:01:02,  2.94it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6238, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7645, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7878, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.964766502380371
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5841, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7276, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7726, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.941856384277344
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6782, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7231, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7367, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.912803649902344
+fp_repr is None: False
+  0%|          | 23/1492032 [00:11<165:36:55,  2.50it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: fingerprint_repr is None: False
+{'loss_text_graph': tensor(2.6818, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7768, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7239, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.92070484161377
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7336, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7337, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7649, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.900949478149414
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7111, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7467, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7493, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.908267974853516
+fp_repr is None: False
+  0%|          | 24/1492032 [00:11<167:34:36,  2.47it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7076, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7200, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7099, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.834425926208496
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5847, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7711, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7488, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.925458908081055
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6151, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7467, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7439, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.916014671325684
+fp_repr is None: False
+  0%|          | 25/1492032 [00:11<161:17:27,  2.57it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7146, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7629, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7466, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.992433547973633
+fp_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6022, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7452, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7079, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.857330322265625
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6011, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7307, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7389, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.778234481811523
+fp_repr is None: False
+  0%|          | 26/1492032 [00:12<149:58:54,  2.76it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7064, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7659, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7143, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.874723434448242
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7169, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7225, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7491, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.788311004638672
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5922, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7345, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7493, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.857122421264648
+fp_repr is None: False
+  0%|          | 27/1492032 [00:12<141:50:50,  2.92it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7173, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7435, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7552, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.95367431640625
+fp_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.4629, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7020, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7097, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.869353294372559
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7190, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7225, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7508, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.780106544494629
+fp_repr is None: False
+  0%|          | 28/1492032 [00:12<153:28:31,  2.70it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7760, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7473, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.6870, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.820056915283203
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+fingerprint_repr is None: False
+cl_detail: === Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7353, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7260, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7093, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.788267135620117
+fp_repr is None: False
+{'loss_text_graph': tensor(2.7298, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7565, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7569, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.747466087341309
+fp_repr is None: False
+  0%|          | 29/1492032 [00:13<152:47:33,  2.71it/s]fingerprint_repr is None: False
+fingerprint_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6546, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7298, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7318, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.872942924499512
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.7234, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7330, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7001, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.799885749816895
+fp_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.5895, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7133, device='cuda:0', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7306, device='cuda:0', grad_fn=<NllLossBackward0>)}
+total_loss: 10.813875198364258
+fp_repr is None: False
+  0%|          | 30/1492032 [00:13<155:39:24,  2.66it/s]fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6467, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7222, device='cuda:1', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7803, device='cuda:1', grad_fn=<NllLossBackward0>)}
+total_loss: 10.740788459777832
+fp_repr is None: False
+fingerprint_repr is None: False
+=== Contrastive loss check ===
+is training: True
+contrastive_alpha in config: 0.1
+contrastive_alpha: 0.1
+graph_repr is None: False
+fp_repr is None: False
+cl_detail: {'loss_text_graph': tensor(2.6613, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_graph': tensor(2.7295, device='cuda:2', grad_fn=<NllLossBackward0>), 'loss_fingerprint_text': tensor(2.7692, device='cuda:2', grad_fn=<NllLossBackward0>)}
+total_loss: 10.751830101013184
+fp_repr is None: False
+[2025-07-02 02:55:02,819] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGINT death signal, shutting down workers
+[2025-07-02 02:55:02,819] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2585570 closing signal SIGINT
+[2025-07-02 02:55:02,820] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2585571 closing signal SIGINT
+[2025-07-02 02:55:02,820] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2585572 closing signal SIGINT
+Traceback (most recent call last):
+  File "/home/admin/lxk/2025612/dankapingjia1/pretraining_gimlet.py", line 695, in <module>
+    main()
+  File "/home/admin/lxk/2025612/dankapingjia1/pretraining_gimlet.py", line 641, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/admin/lxk/GIMLET/transformers/src/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/home/admin/lxk/GIMLET/transformers/src/transformers/trainer.py", line 1899, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/admin/anaconda3/envs/xinkangli/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/home/admin/lxk/GIMLET/transformers/src/transformers/data/data_collator.py", line 45, in __call__
+    return self.torch_call(features)
+  File "/home/admin/lxk/2025612/dankapingjia1/dataloaders/gimlet_collator.py", line 137, in torch_call
+    graph_batch = collator_graph_data(
+  File "/home/admin/lxk/2025612/dankapingjia1/dataloaders/graphormer_collator.py", line 338, in collator_graph_data
+    item_new = graphormer_data_transform_tensor(item_new, rich_features)
+  File "/home/admin/lxk/2025612/dankapingjia1/dataloaders/graphormer_transform.py", line 116, in graphormer_data_transform_tensor
+    item.edge_input = torch.from_numpy(edge_input).long()
+KeyboardInterrupt
+  0%|          | 30/1492032 [00:14<203:26:20,  2.04it/s]
