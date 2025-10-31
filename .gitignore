@@ -1,1 +1,8 @@
 compressed_files.tar.gz
+# big binaries / dumps / checkpoints
+core/core.python.*
+gimlet_model/*.bin
+*.bin
+*.pth
+*.pt
+*.ckpt
